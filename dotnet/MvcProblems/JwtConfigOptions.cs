@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
-using Recipes.Core.Application.Auth;
 
-namespace ProblemDetailsExample;
+namespace MvcProblems;
 
 public class JwtConfigOptions : IConfigureNamedOptions<JwtBearerOptions>
 {

@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Recipes.Core.Application.Auth;
 
-namespace ProblemDetailsExample;
+namespace MvcProblems;
 
 [AllowAnonymous]
 [ApiController]

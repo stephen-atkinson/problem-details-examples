@@ -1,7 +1,7 @@
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 
-namespace Recipes.Core.Application.Auth;
+namespace MvcProblems;
 
 public class JwtSettings
 {

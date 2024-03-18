@@ -1,8 +1,8 @@
+using System.Diagnostics;
 using System.Reflection;
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using ProblemDetailsExample;
-using Recipes.Core.Application.Auth;
+using MvcProblems;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,8 +31,6 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 app.UseStatusCodePages();
 
-app.UseExceptionHandler();
-
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -42,15 +40,6 @@ if (app.Environment.IsDevelopment())
 app.UseAuthentication();
 app.UseAuthorization();
 
-// app.MapGet("/orders/{id:int}", (int id) =>
-// {
-//     // return Results.Forbid();
-//     // return Results.BadRequest();
-//     // return Results.Problem();
-//     // return Results.ValidationProblem()
-//     return Results.BadRequest();
-// });
-
-app.MapControllers(); //.RequireAuthorization();
+app.MapControllers().RequireAuthorization();
 
 app.Run();

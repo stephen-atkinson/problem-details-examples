@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace ProblemDetailsExample;
+namespace MvcProblems;
 
 public class SwaggerConfigOptions : IConfigureOptions<SwaggerGenOptions>
 {

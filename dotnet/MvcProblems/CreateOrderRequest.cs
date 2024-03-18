@@ -1,4 +1,4 @@
-namespace ProblemDetailsExample;
+namespace MvcProblems;
 
 public class CreateOrderRequest
 {

@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace ProblemDetailsExample;
+namespace MvcProblems;
 
 public class CreateOrderRequestValidator : AbstractValidator<CreateOrderRequest>
 {

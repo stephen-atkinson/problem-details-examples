@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Options;
 
-namespace ProblemDetailsExample;
+namespace MvcProblems;
 
 public class ProblemDetailsConfigOptions : IConfigureOptions<ProblemDetailsOptions>
 {
